@@ -1,0 +1,151 @@
+$main-color: #edddf0;
+$base-color: #f3ebf5;
+$text-color: #000;
+$hover-color: #a44c23;
+
+.left--contents {
+    float: left;
+    width: 50%;
+}
+
+.right--contents {
+    float: right;
+    width: 50%;
+}
+
+.color--div {
+    background-color: $main-color;
+    height: 952px;
+    width: 580px;
+    position: fixed;
+}
+
+.avatar--div {
+    // height: 526px;
+    width: 375px;
+    margin-top: 180px;
+    margin-left: 270px;
+    background-color: $base-color;
+    position: absolute;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all .30s ease;
+
+    img {
+        width: fit-content;
+        height: 200px;
+        border-radius: 50%;
+        display: block;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.title--name {
+    text-align: center;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-family: 'Vollkorn', serif;
+    font-weight: bolder;
+    font-size: 27px;
+    color: #301d10;
+    text-transform: uppercase;
+}
+
+.line {
+    height: 2.2px;
+    background: $hover-color;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.sub--title {
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+    letter-spacing: 5px;
+}
+
+.social--media {
+    height: 50px;
+    background-color: #fff;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.main--title {
+    // text-align: center;
+    font-family: 'Vollkorn', serif;
+    font-weight: bolder;
+    font-size: 75px;
+    padding-top: 200px;
+    color: #301d10;
+}
+
+.paragraph {
+    color: #301d10;
+    font-family: 'Vollkorn', serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+button {
+    height: 35px;
+    width: 110px;
+    border-color: #301d10;
+    border-radius: 100px;
+    background-color: #fff;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.resume {
+    background-color: #a44c23;
+    color: #fff;
+    border: none;
+}
+
+.projects {
+    margin-left: 15px;
+    border-width: 1px;
+}
+
+.resume:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #301d10;
+    border-radius: 100px;
+}
+
+.projects:hover {
+    background-color: #a44c23;
+    color: #fff;
+    border: none;
+}
+
+.description {
+    padding-top: 20px;
+    width: 380px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #301d10;
+}
+
+.codes {
+    padding-top: 20px;
+    width: 380px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    color: #301d10;
+}
