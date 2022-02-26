@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './About.scss'
 import Avatar from './avatar.jpg'
 import IconButton from '@material-ui/core/IconButton'
@@ -50,8 +51,12 @@ function AboutMe() {
           <h1 className="main--title">Hello World</h1>
           <p className="paragraph">Here's who I am & what I do</p>
           <div className="buttons">
+            <Link to='/resume'>
             <button className='resume'>Resume</button>
+            </Link>
+            <Link to='/projects'>
             <button className='projects'>Projects</button>
+            </Link>
           </div>
           <p className="description">I'm a Tijo, web developer from India, Kerala.
             I love to work in web developing.
