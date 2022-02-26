@@ -3,32 +3,44 @@ $base-color: #f3ebf5;
 $text-color: #000;
 $hover-color: #a44c23;
 
+.container {
+    display: flex;
+    // align-items: center;
+    justify-content: space-between;
+}
+
 .left--contents {
-    float: left;
     width: 50%;
 }
 
 .right--contents {
-    float: right;
     width: 50%;
 }
 
 .color--div {
     background-color: $main-color;
-    height: 952px;
-    width: 580px;
-    position: fixed;
+    height: 800px;
+    width: 577px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+
 .avatar--div {
-    // height: 526px;
+    height: 526px;
     width: 375px;
-    margin-top: 180px;
     margin-left: 270px;
+    padding-top: 60px;
     background-color: $base-color;
-    position: absolute;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    transition: all .30s ease;
+    transition: all .30s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(0.9);
+    }
 
     img {
         width: fit-content;
@@ -78,6 +90,41 @@ $hover-color: #a44c23;
     background-color: #fff;
     width: 100%;
     margin-top: 20px;
+    text-align: center;
+    button {
+        width: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        justify-content: center;
+    }
+    a {
+        color: #000;
+    }
+
+    .GitHub:hover {
+        color: #555555;
+    }
+
+    .Instagram:hover {
+        color: #833AB4;
+    }
+
+    .WhatsApp:hover {
+        color: #25D366;
+    }
+    
+    .Facebook:hover {
+        color: #4267B2;
+    }
+
+    .Twitter:hover {
+        color: #1DA1F2;
+    }
+
+    .LinkedIn:hover {
+        color: #0077b5;
+    }
 }
 
 .main--title {

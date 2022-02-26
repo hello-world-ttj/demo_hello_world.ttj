@@ -14,23 +14,24 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div className='Navbar'>
-          <nav className='Nav'>
-            <p className="Title"><span className='Symbol'>&#9883;</span> Tijo T Joseph <span className='Sub-title'>/ web developer</span></p> 
-            <ul>
+          <nav className='navbar'>
+            <div className="container">
+              <div className="logo"><span className='symbol'>&#9883;</span> Tijo T Joseph <span className='sub-title'>/ web developer</span></div>
+              <ul>
               <li>
-                <Link to="/contact" className='link'>contact</Link>
-              </li>
-              <li>
-                <Link to="/projects" className='link'>projects</Link>
+                <Link exact to="/" className='link'>About Me</Link>
               </li>
               <li>
                 <Link to="/resume" className='link'>resume</Link>
               </li>
               <li>
-                <Link exact to="/" className='link'>About Me</Link>
+                <Link to="/projects" className='link'>projects</Link>
+              </li>
+              <li>
+                <Link to="/contact" className='link'>contact</Link>
               </li>
             </ul>
+            </div>
           </nav>
 
           <Routes>
@@ -39,7 +40,6 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<AboutMe />} />
           </Routes>
-        </div>
       </Router>
     </div>
   );

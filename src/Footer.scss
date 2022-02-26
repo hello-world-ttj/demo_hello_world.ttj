@@ -1,0 +1,73 @@
+.footer {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .copyright {
+        margin-left: 40px;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+        align-items: center;
+
+        .social {
+            margin-right: 70px;
+        }
+
+        .call {
+            margin-top: 7px;
+        }
+
+        .email {
+            margin-top: 7px;
+        }
+
+        button {
+            width: 30px;
+
+            svg {
+                font-size: 15px;
+            }
+        }
+        a {
+            color: #000;
+            margin: 0 20px;
+            text-decoration: none;
+        }
+    
+        .GitHub:hover {
+            color: #555555;
+        }
+    
+        .Instagram:hover {
+            color: #833AB4;
+        }
+    
+        .WhatsApp:hover {
+            color: #25D366;
+        }
+        
+        .Facebook:hover {
+            color: #4267B2;
+        }
+    
+        .Twitter:hover {
+            color: #1DA1F2;
+        }
+    
+        .LinkedIn:hover {
+            color: #0077b5;
+        }
+    }
+}
+
