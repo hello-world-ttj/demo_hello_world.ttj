@@ -1,0 +1,83 @@
+$main-color: #edddf0;
+
+.project {
+    background: $main-color;
+}
+
+.project--container {
+    padding-top: 100px;
+    h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .symbol {
+        color: #a44c23;
+        font-size: 35px;
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f8f4f1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    height: 300px;
+    width: 446px;
+    margin: 20px;
+    display: flex;
+
+    .content {
+        width: 50%;
+
+        .name {
+            color: #a44c23;
+            padding-top: 60px;
+            padding-left: 30px;
+        }
+    }
+
+    .image {
+        width: 50%;
+        img {
+            height: 100%;
+            width:  100%;
+        }
+    }
+}
+
+.col--name {
+    display: flex;
+
+    .color {
+        width: 10px;
+        height: 50px;
+        background-color: #a44c23;
+        margin-top: 50px;
+    }
+}
+
+.language{
+    padding-left: 40px;
+    padding-top: 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.desc, .view{
+    padding-left: 40px;
+    padding-top: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    img {
+        height: 40px;
+        width: auto;
+        padding-top: 20px;
+    }
+}
+
