@@ -14,6 +14,10 @@
         text-transform: uppercase;
         font-weight: 700;
         margin-bottom: 16px;
+        animation: main 300ms ease-in 400ms;
+        animation-fill-mode: forwards;
+        transform: translateY(-50px) ;
+        opacity: 0;
     }
 
     a {
@@ -23,6 +27,10 @@
         text-decoration: none;
         margin-bottom: 20px;
         width: 300px;
+        animation: main 300ms ease-in 600ms;
+        animation-fill-mode: forwards;
+        transform: translateY(-50px) ;
+        opacity: 0;
 
         &:hover {
             background-color: #d4d4d4;
@@ -34,6 +42,10 @@
 
     .codes {
         margin-bottom: 10px;
+        animation: main 300ms ease-in 800ms;
+        animation-fill-mode: forwards;
+        transform: translateY(-50px) ;
+        opacity: 0;
     }
 }
 
@@ -47,13 +59,21 @@ hr {
     font-size: 20px;
     font-weight: 600;
     margin: 30px 0;
+    animation: main 300ms ease-in 1000ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-50px) ;
+    opacity: 0;
+    
 }
 
 .skills {
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
-
+    animation: main 300ms ease-in 1200ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-50px) ;
+    opacity: 0;
     .skill--group {
 
         ul {
@@ -71,7 +91,10 @@ hr {
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
-
+    animation: main 300ms ease-in 1400ms;
+    animation-fill-mode: forwards;
+    transform: translateY(-50px) ;
+    opacity: 0;
     .university {
         h1 {
             font-size: 18px
@@ -93,4 +116,16 @@ hr {
 
 .copyright {
     margin-left: 10px;
+}
+
+@keyframes main {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

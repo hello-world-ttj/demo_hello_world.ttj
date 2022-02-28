@@ -10,7 +10,9 @@ import Contact from './Contact';
 import Projects from './Projects';
 import Resume from './Resume';
 
+
 function App() {
+
   return (
     <div className="App">
       <Router>
@@ -22,13 +24,13 @@ function App() {
                 <Link exact to="/" className='link'>About Me</Link>
               </li>
               <li>
-                <Link to="/resume" className='link'>resume</Link>
+                <Link to="/resume" className='link' >resume</Link>
               </li>
               <li>
-                <Link to="/projects" className='link'>projects</Link>
+                <Link to="/projects" className='link' >projects</Link>
               </li>
               <li>
-                <Link to="/contact" className='link'>contact</Link>
+                <Link to="/contact" className='link' >contact</Link>
               </li>
             </ul>
             </div>

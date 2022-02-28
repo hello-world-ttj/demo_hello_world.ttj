@@ -9,6 +9,10 @@ $main-color: #edddf0;
     h1 {
         text-align: center;
         font-size: 28px;
+        animation: main 300ms ease-in 400ms;
+        animation-fill-mode: forwards;
+        transform: perspective(-50px) ;
+        opacity: 0;
     }
 
     .symbol {
@@ -30,9 +34,17 @@ $main-color: #edddf0;
     width: 446px;
     margin: 20px;
     display: flex;
+    animation: main 300ms ease-in 800ms;
+    animation-fill-mode: forwards;
+    transform: perspective(-50px) ;
+    opacity: 0;
 
     .content {
         width: 50%;
+        animation: main 300ms ease-in 1000ms;
+        animation-fill-mode: forwards;
+        transform: perspective(-50px) ;
+        opacity: 0;
 
         .name {
             color: #a44c23;
@@ -46,6 +58,10 @@ $main-color: #edddf0;
         img {
             height: 100%;
             width:  100%;
+            animation: main 300ms ease-in 1000ms;
+            animation-fill-mode: forwards;
+            transform: perspective(-50px) ;
+            opacity: 0;
         }
     }
 }
@@ -81,3 +97,14 @@ $main-color: #edddf0;
     }
 }
 
+@keyframes main {
+    0% {
+        transform: perspective(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: perspective(0);
+        opacity: 1;
+    }
+}

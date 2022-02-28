@@ -25,6 +25,10 @@ $hover-color: #a44c23;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    animation: avatar 300ms ease-in 600ms;
+    animation-fill-mode: forwards;
+    transform: skewY(-20px);
+    opacity: 0;
 }
 
 
@@ -37,7 +41,10 @@ $hover-color: #a44c23;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all .30s ease-in-out;
     cursor: pointer;
-
+    animation: avatar 300ms ease-in 900ms;
+    animation-fill-mode: forwards;
+    transform: skewY(-20px);
+    opacity: 0;
     &:hover {
         transform: scale(0.9);
     }
@@ -97,6 +104,10 @@ $hover-color: #a44c23;
         margin-right: 10px;
         margin-top: 5px;
         justify-content: center;
+        animation: main 300ms ease-in 1000ms;
+        animation-fill-mode: forwards;
+        transform: translateX(-50px);
+        opacity: 0;
     }
     a {
         color: #000;
@@ -134,6 +145,10 @@ $hover-color: #a44c23;
     font-size: 75px;
     padding-top: 200px;
     color: #301d10;
+    animation: main 300ms ease-in 1200ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-50px);
+    opacity: 0;
 }
 
 .paragraph {
@@ -142,6 +157,10 @@ $hover-color: #a44c23;
     font-weight: 700;
     font-size: 20px;
     padding-top: 30px;
+    animation: main 300ms ease-in 1400ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-50px);
+    opacity: 0;
 }
 
 button {
@@ -155,6 +174,10 @@ button {
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
+    animation: main 300ms ease-in 1600ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-50px);
+    opacity: 0;
 }
 
 .resume {
@@ -187,6 +210,10 @@ button {
     font-size: 18px;
     letter-spacing: 1.5px;
     color: #301d10;
+    animation: main 300ms ease-in 1800ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-50px);
+    opacity: 0;
 }
 
 .codes {
@@ -195,4 +222,33 @@ button {
     font-size: 18px;
     letter-spacing: 1.5px;
     color: #301d10;
+    animation: main 300ms ease-in 2000ms;
+    animation-fill-mode: forwards;
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+@keyframes avatar {
+    0% {
+        transform: skewY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: skewY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes main {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }

@@ -17,6 +17,7 @@ $hover-color: #a44c23;
   background: #fff;
   height: 150px;
   text-transform: uppercase;
+  animation: nav-loads 400ms ease-in;
   // position: fixed;
   // top: 0;
   // width: 100%;
@@ -34,6 +35,9 @@ $hover-color: #a44c23;
     font-weight: 700;
     font-family: 'Vollkorn', serif;
     margin-left: 20px;
+    animation: nav-link-load 500ms ease-in-out 400ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
 
     .symbol {
     color: #a44c23;
@@ -51,6 +55,9 @@ $hover-color: #a44c23;
   ul {
     display: flex;
     list-style-type: none;
+    animation: nav-link-load 500ms ease-in-out 400ms;
+    animation-fill-mode: forwards;
+    transform: scale(0);
   }
 
   .link {
@@ -58,14 +65,40 @@ $hover-color: #a44c23;
     text-decoration: none;
     margin: 0 20px;
     font-size: 15px;
-
+    
     &:hover {
       color: $hover-color;
     }
   }
 }
 
+.active {
+  color: $hover-color;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 15px;
+}
 
+@keyframes nav-loads {
+  0% {
+    transform: translateY(-100%);
+  }
 
+  100% {
+    transform: translateY(0);
+  }
+}
 
+@keyframes nav-link-load {
+  0% {
+    transform: scale(0);
+  }
 
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
