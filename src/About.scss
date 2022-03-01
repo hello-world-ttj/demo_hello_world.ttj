@@ -15,6 +15,7 @@ $hover-color: #a44c23;
 
 .right--contents {
     width: 50%;
+    margin-left: 100px;
 }
 
 .color--div {
@@ -225,6 +226,7 @@ button {
     transform: translateX(-50px);
     opacity: 0;
 }
+
 
 @keyframes avatar {
     0% {
