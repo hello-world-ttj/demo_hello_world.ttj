@@ -7,7 +7,7 @@ function Projects() {
 
   const projects = Data.map(data => {
     return (
-      <div className="card">
+      <div className="card" key={data.id}>
         <div className="content">
           <div className="col--name">
           <div className="color"></div>

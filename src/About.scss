@@ -41,10 +41,8 @@ $hover-color: #a44c23;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: all .30s ease-in-out;
     cursor: pointer;
-    animation: avatar 300ms ease-in 900ms;
-    animation-fill-mode: forwards;
+    animation: avatar 300ms ease-in ;
     transform: skewY(-20px);
-    opacity: 0;
     &:hover {
         transform: scale(0.9);
     }

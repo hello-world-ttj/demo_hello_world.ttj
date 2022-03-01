@@ -9,12 +9,34 @@ import AboutMe from './AboutMe';
 import Contact from './Contact';
 import Projects from './Projects';
 import Resume from './Resume';
+import { useEffect, useState } from 'react';
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 
 function App() {
 
+  const [loading,setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 3300)
+  },[])
+
   return (
     <div className="App">
+      {
+        loading ?
+
+        <div className='loading'>
+          <PacmanLoader 
+            color={'#F6BDFF'}
+            loading={loading} 
+            size={50} 
+          />
+        </div>
+        :
       <Router>
           <nav className='navbar'>
             <div className="container">
@@ -24,25 +46,26 @@ function App() {
                 <Link exact to="/" className='link'>About Me</Link>
               </li>
               <li>
-                <Link to="/resume" className='link' >resume</Link>
+                <Link to="/resume" className='link'>resume</Link>
               </li>
               <li>
-                <Link to="/projects" className='link' >projects</Link>
+                <Link to="/projects" className='link'>projects</Link>
               </li>
               <li>
-                <Link to="/contact" className='link' >contact</Link>
+                <Link to="/contact" className='link'>contact</Link>
               </li>
             </ul>
             </div>
           </nav>
 
           <Routes>
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/resume" element={<Resume />}/>
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/" element={<AboutMe />} />
           </Routes>
       </Router>
+      }
     </div>
   );
 }

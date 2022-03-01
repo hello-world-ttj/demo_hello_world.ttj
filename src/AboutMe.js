@@ -20,7 +20,7 @@ function AboutMe() {
             <div className="avatar--div">
               <img src={Avatar} alt="Avatar" />
               <h1 className="title--name">Tijo T Joseph</h1>
-              <div class="line"></div>
+              <div className="line"></div>
               <h1 className="sub--title">Web developer</h1>
               <div className="social--media">
                 <IconButton>
