@@ -23,22 +23,22 @@ function AboutMe() {
               <div className="line"></div>
               <h1 className="sub--title">Web developer</h1>
               <div className="social--media">
-                <IconButton>
+                <IconButton className='social--btn'>
                   <a href="https://github.com/hello-world-ttj"><GitHubIcon className='GitHub' /></a>
                 </IconButton>
-                <IconButton>
+                <IconButton className='social--btn'>
                   <a href="https://www.instagram.com/hello_world.ttj/"><InstagramIcon className='Instagram' /></a>
                 </IconButton>
-                <IconButton>
+                <IconButton className='social--btn'>
                   <a href="https://wa.me/918281977675"><WhatsAppIcon className='WhatsApp' /></a>
                 </IconButton>
-                <IconButton>
+                <IconButton className='social--btn'>
                   <a href="https://www.facebook.com/tijojoseph.sony/"><FacebookIcon className='Facebook' /></a>
                 </IconButton>
-                <IconButton>
+                <IconButton className='social--btn'>
                   <a href="https://twitter.com/TijoTJoseph1"><TwitterIcon className='Twitter' /></a>
                 </IconButton>
-                <IconButton>
+                <IconButton className='social--btn'>
                   <a href="https://www.linkedin.com/in/tijo-t-joseph/"><LinkedInIcon className='LinkedIn' /></a>
                 </IconButton>
               </div>
@@ -52,13 +52,13 @@ function AboutMe() {
           <p className="paragraph">Here's who I am & what I do</p>
           <div className="buttons">
             <Link to='/resume'>
-            <button className='resume'>Resume</button>
+            <button className='btnb resume'>Resume</button>
             </Link>
             <Link to='/projects'>
-            <button className='projects'>Projects</button>
+            <button className='btnb projects'>Projects</button>
             </Link>
           </div>
-          <p className="description">I'm a Tijo, web developer from India, Kerala.
+          <p className="description">I'm Tijo, A web developer from India, Kerala.
             I love to work in web developing.
             Because I love to solve the design &
             development problem and find easy and better solutions to solve them.
