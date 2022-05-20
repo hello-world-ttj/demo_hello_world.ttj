@@ -21,7 +21,7 @@ let Data = [
         img: "images/black.jpeg",
         lang: "JS",
         des: "Black Jack Game",
-        link: "https://hello-world-ttj.github.io/blackJack/"
+        link: "https://blackjackgame21.netlify.app/"
     },
     {
         id: "004",
@@ -29,7 +29,7 @@ let Data = [
         img: "images/Rps.jpeg",
         lang: "JS",
         des: "Rock Paper Scissors Game",
-        link: "https://hello-world-ttj.github.io/rock-paper-scissors/"
+        link: "https://hello-world-ttj-rps.netlify.app/"
     },
     {
         id: "005",
@@ -45,7 +45,7 @@ let Data = [
         img: "images/counter.jpeg",
         lang: "JS",
         des: "Counter App",
-        link: "https://hello-world-ttj.github.io/js_counter/"
+        link: "https://numbercounting.netlify.app/"
     },
     {
         id: "007",
